@@ -60,8 +60,8 @@ The structure of the files is as below.
     ![alt text](https://github.com/bassemessam/disaster-reponse-project/blob/main/screenshots/result-page.jpg?raw=true)
 
 5. In web browser, you will find two visualization graphs from the dataset.
-  - Count of messages in each category in the dataset.
-  - The average message length in each category.
+    - Count of messages in each category in the dataset.
+    - The average message length in each category.
 
 
 ### License:
