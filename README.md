@@ -51,12 +51,13 @@ The structure of the files is as below.
 2. Run the following command in the app's directory to run your web app.
     `python run.py`
 
-3. Go to http://0.0.0.0:3001/
-![alt text](https://github.com/bassemessam/disaster-response-project/blob/main/screenshots/index-page.jpg?raw=true)
+    3. Go to http://0.0.0.0:3001/
+    ![alt text](https://github.com/bassemessam/disaster-reponse-project/blob/main/screenshots/index-home-page.jpg?raw=true)
 
-4. Classify message button will direct you to the results page. The classification is done for each category with the Certainty rate of the classification.
 
-![alt text](https://github.com/bassemessam/disaster-response-project/blob/main/screenshots/result-page.jpg?raw=true)
+    4. Classify message button will direct you to the results page. The classification is done for each category with the Certainty rate of the classification.
+
+    ![alt text](https://github.com/bassemessam/disaster-reponse-project/blob/main/screenshots/result-page.jpg?raw=true)
 
 5. In web browser, you will find two visualization graphs from the dataset.
   - Count of messages in each category in the dataset.

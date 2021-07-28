@@ -65,7 +65,7 @@ def build_model(X_train, Y_train):
                            ])
     '''Parameters to be used to get the best estimator, but it needs a lot of
     computational resources. The parameters reduced for the code testing puposes
-    
+
     parameters = {
         'vect__ngram_range': ((1, 1), (1, 2)),
         'vect__max_df': (0.5, 0.75, 1.0),
@@ -144,7 +144,7 @@ def main():
         print('Please provide the filepath of the disaster messages database '\
               'as the first argument and the filepath of the pickle file to '\
               'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier1.pkl')
+              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
 
 
 if __name__ == '__main__':

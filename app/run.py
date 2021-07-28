@@ -31,7 +31,7 @@ engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('messages-categories', engine)
 
 # load model
-model = joblib.load("../models/classifier2.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -123,7 +123,7 @@ def go():
             classification_results[f"{classes_list[i]}"]=np.max(prob)
         else:
             classification_results[f"{classes_list[i]}"] = 0
-    
+
     # This will render the go.html Please see that file.
     return render_template(
         'go.html',
