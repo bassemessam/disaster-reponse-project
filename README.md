@@ -39,6 +39,8 @@ The structure of the files is as below.
   -requirements.txt
   -ML Pipeline Preparation.ipynb
   -ETL Pipeline Preparation.ipynb
+  -disaster_categories.csv
+  -disaster_messages.csv 
 ```
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
