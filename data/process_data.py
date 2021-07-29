@@ -36,10 +36,13 @@ def clean_data(df):
         categories[column] = categories[column].astype(int)
 
     df.drop(columns='categories',inplace=True)
+    #replace 2 in 'related' column with 1 to make it binary.
+    categories.related = np.where(categories['related']!=0,1,0)
     df = pd.concat([df,categories],axis=1)
     df.drop_duplicates(inplace=True)
     classes_list = list(df.columns[4:])
     df.dropna(subset=classes_list,how='any',inplace=True)
+
     return df
 
 
@@ -52,7 +55,7 @@ def save_data(df, database_filename):
     - None.
     '''
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('messages-categories', engine, index=False)
+    df.to_sql('messages-categories', engine, index=False, if_exists='replace')
 
 
 def main():
